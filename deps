@@ -56,3 +56,7 @@
     git=http://github.com/symfony/AsseticBundle.git
     target=/bundles/Symfony/Bundle/AsseticBundle
     version=v1.0.0RC1
+
+[FormModelBundle]
+    git=http://github.com/cordoval/FormModelBundle.git
+    target=/bundles/Cordova/Bundle/FormModelBundle
