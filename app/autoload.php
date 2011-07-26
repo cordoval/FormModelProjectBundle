@@ -15,6 +15,13 @@ $loader->registerNamespaces(array(
     'Monolog'          => __DIR__.'/../vendor/monolog/src',
     'Assetic'          => __DIR__.'/../vendor/assetic/src',
     'Metadata'         => __DIR__.'/../vendor/metadata/src',
+    'Behat\Mink' => __DIR__.'/../vendor/behat/mink/src',
+    'Behat\MinkBundle' => __DIR__.'/../vendor/bundles',
+    'Behat\SahiClient' => __DIR__.'/../vendor/behat/sahi/src',
+    'Behat\BehatBundle' => __DIR__.'/../vendor/bundles',
+    'Behat\Behat'       => __DIR__.'/../vendor/behat/Behat/src',
+    'Behat\Gherkin'     => __DIR__.'/../vendor/behat/Gherkin/src',
+    'Buzz'             => __DIR__.'/../vendor/buzz/lib',
 ));
 $loader->registerPrefixes(array(
     'Twig_Extensions_' => __DIR__.'/../vendor/twig-extensions/lib',
