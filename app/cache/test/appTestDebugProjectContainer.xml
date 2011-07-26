@@ -371,6 +371,7 @@
     <parameter key="security.extra.controller_listener.class">JMS\SecurityExtraBundle\Controller\ControllerListener</parameter>
     <parameter key="security.access.iddqd_voter.class">JMS\SecurityExtraBundle\Security\Authorization\Voter\IddqdVoter</parameter>
     <parameter key="security.extra.secure_all_services">false</parameter>
+    <parameter key="cordova_form_model.calculator.class">Cordova\Bundle\FormModelBundle\Calculator\Calculator</parameter>
     <parameter key="mink.paths.lib">/home/cordoval/sites-2/FormModelProjectBundle/vendor/behat/mink</parameter>
     <parameter key="behat.mink.class">Behat\Mink\Mink</parameter>
     <parameter key="behat.mink.session.class">Behat\Mink\Session</parameter>
@@ -2260,6 +2261,9 @@
       <tag name="kernel.event_listener" event="kernel.controller" method="onCoreController" priority="-255"/>
       <argument type="service" id="service_container"/>
       <argument type="service" id="annotation_reader"/>
+    </service>
+    <service id="cordova_form_model.calculator" class="Cordova\Bundle\FormModelBundle\Calculator\Calculator">
+      <argument>plain_value</argument>
     </service>
     <service id="behat.mink" class="Behat\Mink\Mink" scope="prototype">
       <call method="registerSession">

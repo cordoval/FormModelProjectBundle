@@ -516,6 +516,19 @@ class appTestDebugProjectContainer extends Container
     }
 
     /**
+     * Gets the 'cordova_form_model.calculator' service.
+     *
+     * This service is shared.
+     * This method always returns the same instance of the service.
+     *
+     * @return Cordova\Bundle\FormModelBundle\Calculator\Calculator A Cordova\Bundle\FormModelBundle\Calculator\Calculator instance.
+     */
+    protected function getCordovaFormModel_CalculatorService()
+    {
+        return $this->services['cordova_form_model.calculator'] = new \Cordova\Bundle\FormModelBundle\Calculator\Calculator('plain_value');
+    }
+
+    /**
      * Gets the 'data_collector.request' service.
      *
      * This service is shared.
@@ -2909,6 +2922,7 @@ class appTestDebugProjectContainer extends Container
             'security.extra.controller_listener.class' => 'JMS\\SecurityExtraBundle\\Controller\\ControllerListener',
             'security.access.iddqd_voter.class' => 'JMS\\SecurityExtraBundle\\Security\\Authorization\\Voter\\IddqdVoter',
             'security.extra.secure_all_services' => false,
+            'cordova_form_model.calculator.class' => 'Cordova\\Bundle\\FormModelBundle\\Calculator\\Calculator',
             'mink.paths.lib' => '/home/cordoval/sites-2/FormModelProjectBundle/vendor/behat/mink',
             'behat.mink.class' => 'Behat\\Mink\\Mink',
             'behat.mink.session.class' => 'Behat\\Mink\\Session',
