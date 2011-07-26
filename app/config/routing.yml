@@ -1,3 +1,7 @@
+CordovaPhpSpecBundle:
+    resource: "@CordovaPhpSpecBundle/Resources/config/routing.xml"
+    prefix:   /
+
 CordovaFormModelBundle:
     resource: "@CordovaFormModelBundle/Controller/"
     type:     annotation

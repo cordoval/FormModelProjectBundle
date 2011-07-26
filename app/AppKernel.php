@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new Cordova\Bundle\FormModelBundle\CordovaFormModelBundle(),
+            new Cordova\Bundle\PhpSpecBundle\CordovaPhpSpecBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
