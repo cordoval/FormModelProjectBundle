@@ -21,7 +21,7 @@
  <target name="vendors"
          description="Update vendors">
   <exec executable="bin/vendors" failonerror="true">
-     <arg value="update" />
+     <arg value="install" />
   </exec>
  </target>
 
