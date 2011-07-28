@@ -23,7 +23,7 @@
   <exec executable="bin/vendors" failonerror="true">
      <arg value="update" />
      <!--<arg value="install" />
-     <arg value="--reinstall" />-->
+     <arg value="reinstall" />-->
   </exec>
  </target>
 
