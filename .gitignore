@@ -1,0 +1,2 @@
+build/*
+!build/phpmd.xml
