@@ -61,5 +61,5 @@
   <exec command="phpcb --log ${basedir}/build/logs --source ${source} --output ${basedir}/build/code-browser" />
  </target>
 
- <target name="build" depends="clean,phpunit,phpcb"/>
+ <target name="build" depends="clean,phpunit,phpcb,phpdoc,phpcs,phploc,phpcpd,phpmd,pdepend"/>
 </project>
