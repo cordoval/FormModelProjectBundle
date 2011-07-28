@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="FormModelProjectBundle" default="build" basedir=".">
+ <property name="source" value="vendor/bundles/Cordova/Bundle/FormModelBundle"/>
+ <property name="basedir" value="${ws}" />
+
+
+ <target name="clean"
+         description="Clean up and create artifact directories">
+  <delete dir="${basedir}/build/api"/>
+  <delete dir="${basedir}/build/code-browser"/>
+  <delete dir="${basedir}/build/coverage"/>
+  <delete dir="${basedir}/build/logs"/>
+  <delete dir="${basedir}/build/pdepend"/>
+
+  <mkdir dir="${basedir}/build/api"/>
+  <mkdir dir="${basedir}/build/code-browser"/>
+  <mkdir dir="${basedir}/build/coverage"/>
+  <mkdir dir="${basedir}/build/logs"/>
+  <mkdir dir="${basedir}/build/pdepend"/>
+ </target>
+
+ <target name="phpunit"
+         description="Run unit tests using PHPUnit and generates junit.xml and clover.xml">
+   <echo msg="PHP Unit ..."/>
+   <exec command="phpunit --log-junit build/logs/junit.xml --coverage-clover build/logs/clover.xml -c app"/>
+ </target>
+ 
+ <target name="pdepend"
+         description="Generate jdepend.xml and software metrics charts using PHP_Depend">
+   <exec command="pdepend --jdepend-xml=${basedir}/build/logs/jdepend.xml --jdepend-chart=${basedir}/build/pdepend/dependencies.svg --overview-pyramid=${basedir}/build/pdepend/overview-pyramid.svg ${source}" />
+ </target>
+
+ <target name="phpmd"
+         description="Generate pmd.xml using PHPMD">
+  <exec command="phpmd ${source} xml ${basedir}/build/phpmd.xml --reportfile ${basedir}/build/logs/pmd.xml" />
+ </target>
+
+ <target name="phpcpd"
+         description="Generate pmd-cpd.xml using PHPCPD">
+  <exec command="phpcpd --log-pmd ${basedir}/build/logs/pmd-cpd.xml ${source}" />
+ </target>
+
+ <target name="phploc"
+         description="Generate phploc.csv">
+  <exec command="phploc --log-csv ${basedir}/build/logs/phploc.csv ${source}" />
+ </target>
+
+ <target name="phpcs"
+         description="Generate checkstyle.xml using PHP_CodeSniffer">
+  <exec command="phpcs --report=checkstyle --report-file=${basedir}/build/logs/checkstyle.xml --standard=${basedir}/build/phpcs.xml ${source}" output="/dev/null" />
+ </target>
+
+ <target name="phpdoc"
+         description="Generate API documentation using PHPDocumentor">
+  <exec command="phpdoc --directory ${source} --target ${basedir}/build/api" />
+ </target>
+
+ <target name="phpcb"
+         description="Aggregate tool output with PHP_CodeBrowser">
+  <exec command="phpcb --log ${basedir}/build/logs --source ${source} --output ${basedir}/build/code-browser" />
+ </target>
+
+ <target name="build" depends="clean,phpunit,phpcb"/>
+</project>
