@@ -15,8 +15,10 @@
 
     <testsuites>
         <testsuite name="Project Test Suite">
-            <directory>../src/*/*Bundle/Tests</directory>
-            <directory>../src/*/Bundle/*Bundle/Tests</directory>
+            <directory>../src/Cordova/Bundle/*Bundle/Tests</directory>
+        </testsuite>
+        <testsuite name="FormModelProjectBundle">
+            <directory>../vendor/bundles/Cordova/Bundle/*Bundle/Tests</directory>
         </testsuite>
     </testsuites>
 
@@ -29,7 +31,7 @@
     <filter>
         <whitelist>
             <directory>../src</directory>
-            <directory>../vendor</directory>
+            <!--<directory>../vendor</directory>-->
             <exclude>
                 <directory>../src/*/*Bundle/Resources</directory>
                 <directory>../src/*/*Bundle/Tests</directory>
