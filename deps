@@ -58,7 +58,7 @@
     version=v1.0.0RC1
 
 [FormModelBundle]
-    git=https://github.com/cordoval/FormModelBundle.git
+    git=http://github.com/cordoval/FormModelBundle.git
     target=/bundles/Cordova/Bundle/FormModelBundle
 
 [buzz]
