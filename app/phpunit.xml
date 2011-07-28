@@ -37,6 +37,7 @@
                 <directory>../src/*/Bundle/*Bundle/Tests</directory>
                 <directory>../vendor/*/Bundle/*Bundle/Resources</directory>
                 <directory>../vendor/*/Bundle/*Bundle/Tests</directory>
+                <directory>../vendor/monolog/tests</directory>
             </exclude>
         </whitelist>
     </filter>
