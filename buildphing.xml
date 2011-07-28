@@ -2,7 +2,7 @@
 
 <project name="FormModelProjectBundle" default="build" basedir=".">
  <property name="source" value="vendor/bundles/Cordova/Bundle/FormModelBundle"/>
- <property name="basedir" value="${ws}" />
+ <property name="basedir" value="." />
 
 
  <target name="clean"
