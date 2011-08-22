@@ -1,6 +1,6 @@
-CordovaPhpSpecBundle:
-    resource: "@CordovaPhpSpecBundle/Resources/config/routing.xml"
-    prefix:   /
+#CordovaPhpSpecBundle:
+#    resource: "@CordovaPhpSpecBundle/Resources/config/routing.xml"
+#    prefix:   /
 
 CordovaFormModelBundle:
     resource: "@CordovaFormModelBundle/Controller/"
@@ -11,3 +11,8 @@ CordovaFormModelBundle:
 #_internal:
 #   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
 #   prefix:   /_internal
+
+AcmePizzaBundle:
+    resource: "@AcmePizzaBundle/Controller/"
+    type:     annotation
+    prefix:   /acme-pizza

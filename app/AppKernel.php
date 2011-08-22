@@ -8,6 +8,7 @@ class AppKernel extends Kernel
     public function registerBundles()
     {
         $bundles = array(
+            new Symfony\Bundle\DoctrineFixturesBundle\DoctrineFixturesBundle(),
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
@@ -18,6 +19,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new Cordova\Bundle\FormModelBundle\CordovaFormModelBundle(),
+            new Acme\PizzaBundle\AcmePizzaBundle(),
             //new Cordova\Bundle\PhpSpecBundle\CordovaPhpSpecBundle(),
         );
 

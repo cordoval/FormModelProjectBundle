@@ -88,3 +88,18 @@
 [Behat]
     git=https://github.com/Behat/Behat.git
     target=/behat/Behat
+
+[AcmePizzaBundle]
+    git=https://github.com/beberlei/AcmePizzaBundle.git
+    target=/bundles/Acme/PizzaBundle
+
+[doctrine-fixtures]
+    git=http://github.com/doctrine/data-fixtures.git
+
+[DoctrineFixturesBundle]
+    git=http://github.com/symfony/DoctrineFixturesBundle.git
+    target=/bundles/Symfony/Bundle/DoctrineFixturesBundle
+
+[PHPSpec]
+    git=https://github.com/phpspec/phpspec.git
+    target=/phpspec

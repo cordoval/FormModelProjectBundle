@@ -9,6 +9,7 @@ $loader->registerNamespaces(array(
     'Sensio'           => __DIR__.'/../vendor/bundles',
     'JMS'              => __DIR__.'/../vendor/bundles',
     'Cordova'          => __DIR__.'/../vendor/bundles',
+    'Doctrine\\Common\\DataFixtures' => __DIR__.'/../vendor/doctrine-fixtures/lib',
     'Doctrine\\Common' => __DIR__.'/../vendor/doctrine-common/lib',
     'Doctrine\\DBAL'   => __DIR__.'/../vendor/doctrine-dbal/lib',
     'Doctrine'         => __DIR__.'/../vendor/doctrine/lib',
@@ -22,6 +23,7 @@ $loader->registerNamespaces(array(
     'Behat\Behat'       => __DIR__.'/../vendor/behat/Behat/src',
     'Behat\Gherkin'     => __DIR__.'/../vendor/behat/Gherkin/src',
     'Buzz'             => __DIR__.'/../vendor/buzz/lib',
+    'Acme'             => __DIR__.'/../vendor/bundles',
 ));
 $loader->registerPrefixes(array(
     'Twig_Extensions_' => __DIR__.'/../vendor/twig-extensions/lib',
