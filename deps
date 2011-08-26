@@ -103,3 +103,11 @@
 [PHPSpec]
     git=https://github.com/phpspec/phpspec.git
     target=/phpspec
+
+[PHPAutotest]
+    git=https://github.com/Programania/PHPAutotest.git
+    target=/PHPAutotest
+
+;[TestBundle]
+;    git=https://github.com/cordoval/TestBundle.git
+;    target=/bundles/Cordova/Bundle/TestBundle

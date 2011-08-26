@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new Cordova\Bundle\FormModelBundle\CordovaFormModelBundle(),
             new Acme\PizzaBundle\AcmePizzaBundle(),
+            new Cordova\Bundle\TestBundle\CordovaTestBundle(),
             //new Cordova\Bundle\PhpSpecBundle\CordovaPhpSpecBundle(),
         );
 

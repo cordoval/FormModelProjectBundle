@@ -1,3 +1,8 @@
+CordovaTestBundle:
+    resource: "@CordovaTestBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 #CordovaPhpSpecBundle:
 #    resource: "@CordovaPhpSpecBundle/Resources/config/routing.xml"
 #    prefix:   /
