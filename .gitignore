@@ -1,4 +1,9 @@
-app/build
-app/build/*
-build/*
+web/bundles/
+app/boostrap.php.cache
 !build/phpmd.xml
+app/cache/*
+app/logs/*
+build/
+app/build/*
+
+
