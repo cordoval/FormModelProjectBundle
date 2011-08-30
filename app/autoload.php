@@ -5,6 +5,8 @@ use Doctrine\Common\Annotations\AnnotationRegistry;
 
 $loader = new UniversalClassLoader();
 $loader->registerNamespaces(array(
+    'PHPSpec\\Context' => __DIR__.'/../vendor/bundles/phpspec-symfony2',
+    'PHPSpec'          => __DIR__.'/../vendor/bundles/phpspec/src',
     'Symfony'          => array(__DIR__.'/../vendor/symfony/src', __DIR__.'/../vendor/bundles'),
     'Sensio'           => __DIR__.'/../vendor/bundles',
     'JMS'              => __DIR__.'/../vendor/bundles',
