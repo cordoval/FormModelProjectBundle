@@ -113,10 +113,17 @@
 ;    target=/bundles/Cordova/Bundle/TestBundle
 
 [phpspec-symfony2]
-    git=git@github.com:cordoval/phpspec-symfony2.git
+    git=https://github.com/cordoval/phpspec-symfony2.git
     target=/phpspec-symfony2
 
 [Phabric]
     git=https://github.com/benwaine/Phabric.git
     target=/Phabric
 
+[mockery]
+    git=https://github.com/padraic/mockery.git
+    target=/mockery
+
+[hamcrest-php]
+    git=https://github.com/cordoval/hamcrest-php.git
+    target=/hamcrest-php
