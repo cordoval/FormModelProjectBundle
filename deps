@@ -108,9 +108,9 @@
     git=https://github.com/Programania/PHPAutotest.git
     target=/PHPAutotest
 
-;[TestBundle]
-;    git=https://github.com/cordoval/TestBundle.git
-;    target=/bundles/Cordova/Bundle/TestBundle
+[TestBundle]
+    git=https://github.com/cordoval/TestBundle.git
+    target=/bundles/Cordova/Bundle/TestBundle
 
 [phpspec-symfony2]
     git=https://github.com/cordoval/phpspec-symfony2.git
