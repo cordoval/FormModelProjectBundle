@@ -56,8 +56,8 @@ require_once __DIR__.'/../vendor/swiftmailer/lib/classes/Swift.php';
 Swift::registerAutoload(__DIR__.'/../vendor/swiftmailer/lib/swift_init.php');
 
 require_once __DIR__.'/../vendor/mockery/library/Mockery/Loader.php';
-require_once __DIR__.'/../vendor/hamcrest-php/hamcrest/Hamcrest.php';
+//require_once __DIR__.'/../vendor/hamcrest-php/hamcrest/Hamcrest.php';
 $loader = new \Mockery\Loader;
 $loader->register();
 
-\PHPSpec\PHPSpec::setTestingPHPSpec(false);
+//\PHPSpec\PHPSpec::setTestingPHPSpec(false);
