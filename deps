@@ -101,7 +101,7 @@
     target=/bundles/Symfony/Bundle/DoctrineFixturesBundle
 
 [PHPSpec]
-    git=https://github.com/phpspec/phpspec.git
+    git=https://github.com/cordoval/phpspec.git
     target=/phpspec
 
 [PHPAutotest]
