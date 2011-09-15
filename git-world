@@ -10,7 +10,6 @@ def gitworld(command)
 	"vendor/bundles/Cordova/Bundle/FormModelBundle",	\
 	"vendor/phpspec",	\
 	"vendor/phpspec-symfony2",	\
-	"."	\
     ]
     paths.each do |path|
         fullpath = "#{home}/#{path}"
