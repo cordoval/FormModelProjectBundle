@@ -1,0 +1,41 @@
+#!/usr/bin/env ruby
+require 'open3'
+include Open3
+
+# TODO: use colors in output
+
+def gitworld(command)
+    home = ENV["PWD"]
+    paths = [                      \
+	".",	\
+	"vendor/bundles/Cordova/Bundle/FormModelBundle",	\
+	"vendor/phpspec",	\
+	"vendor/phpspec-symfony2"	\
+    ]
+    paths.each do |path|
+        fullpath = "#{home}/#{path}"
+        if File.directory? fullpath
+            Dir.chdir("#{fullpath}")
+            popen3("git #{command}") do |stdin, stdout, stderr, wait_thr|
+                output = stdout.read
+                error = stderr.read
+                printf "============================[ %30s ]=======\n%s", path, output
+                puts "" if output.length > 0
+                print stderr.read
+                puts "" if error.length > 0
+            end
+        end
+    end
+end
+
+if ARGV[0].nil?
+    command = "git"
+else
+    command = ARGV
+end
+
+puts "Running `git #{command}` on all repositories..."
+gitworld command
+
+# vim: set ft=ruby
+
