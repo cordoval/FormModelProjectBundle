@@ -61,3 +61,5 @@ $loader = new \Mockery\Loader;
 $loader->register();
 
 //\PHPSpec\PHPSpec::setTestingPHPSpec(false);
+
+require_once ('PHPUnit/Autoload.php');
