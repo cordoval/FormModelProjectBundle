@@ -7,10 +7,10 @@ include Open3
 def gitworld(command)
     home = ENV["PWD"]
     paths = [                      \
-	".",	\
 	"vendor/bundles/Cordova/Bundle/FormModelBundle",	\
 	"vendor/phpspec",	\
-	"vendor/phpspec-symfony2"	\
+	"vendor/phpspec-symfony2",	\
+	"."	\
     ]
     paths.each do |path|
         fullpath = "#{home}/#{path}"
