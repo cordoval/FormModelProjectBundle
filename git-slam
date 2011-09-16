@@ -2,7 +2,7 @@
 
 ruby git-world "status"
 ruby git-world "add ."
-ruby git-world "commit -a"
+ruby git-world "commit -a -m \"rapid\""
 git add .
 git commit -a
 git push origin master

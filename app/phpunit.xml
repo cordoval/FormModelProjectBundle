@@ -19,6 +19,7 @@
         </testsuite>
         <testsuite name="FormModelProjectBundle">
             <directory>../vendor/bundles/Cordova/Bundle/*Bundle/Tests</directory>
+            <directory>../vendor/bundles/Cordova/Bundle/*Bundle/Specs</directory>
         </testsuite>
     </testsuites>
 
