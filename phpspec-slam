@@ -1,0 +1,1 @@
+find vendor/PHPAutotest/demo/PHPSpec/MineSweeper/Specs/*.php -exec phpspec '{}' -f documentation --color  \;
