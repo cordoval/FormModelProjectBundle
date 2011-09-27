@@ -127,3 +127,4 @@
 [hamcrest-php]
     git=https://github.com/cordoval/hamcrest-php.git
     target=/hamcrest-php
+
